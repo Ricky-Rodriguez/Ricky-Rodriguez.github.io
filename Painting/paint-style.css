@@ -1,0 +1,58 @@
+@font-face {
+  font-family: RockSalt;
+  src: url("../fonts/RockSalt-Regular.ttf");
+}
+
+h1 {
+  font-family: RockSalt, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 20px;
+}
+
+/* main {
+  background: #587e8c;
+} */
+
+.landing {
+  background-image: url(../images/IMG_20200425_133824.jpg);
+  background-position: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.art-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 10px;
+  background-color: #587e8c;
+}
+
+.art-work-item {
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.art-work-item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.art-work-item:focus {
+  transform: scale(1.4);
+  /* opacity: 0.5; */
+}
+
+@media screen and (max-width: 1260px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* lightbox */

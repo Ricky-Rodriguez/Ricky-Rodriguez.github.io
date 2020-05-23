@@ -1,0 +1,118 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 100px 0;
+  background-color: #587e8c;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #183540;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  width: 10rem;
+  height: 1rem;
+  background-color: rgba(242, 183, 5, 1);
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 25rem;
+  background-color: #183540;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h1 {
+  font-size: 25px;
+  color: rgba(242, 183, 5, 1);
+  margin: 15px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    margin: 2rem;
+    transition: transform 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .card:nth-child(1) {
+    animation: fadeIn 0.5s 0.5s backwards;
+  }
+  .card:nth-child(2) {
+    animation: fadeIn 0.5s 1s backwards;
+  }
+  .card:nth-child(3) {
+    animation: fadeIn 0.5s 1.5s backwards;
+  }
+  .card:nth-child(4) {
+    animation: fadeIn 0.5s 2s backwards;
+  }
+  .card:nth-child(5) {
+    animation: fadeIn 0.5s 2.5s backwards;
+  }
+  .card:nth-child(6) {
+    animation: fadeIn 0.5s 3s backwards;
+  }
+  .card:nth-child(7) {
+    animation: fadeIn 0.5s 3.5s backwards;
+  }
+  .card:nth-child(8) {
+    animation: fadeIn 0.5s 4s backwards;
+  }
+  .card:nth-child(9) {
+    animation: fadeIn 0.5s 4.5s backwards;
+  }
+
+  .card:hover {
+    transform: scale(1.08);
+  }
+}

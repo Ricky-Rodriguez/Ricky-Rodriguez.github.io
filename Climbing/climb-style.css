@@ -1,0 +1,158 @@
+@font-face {
+  font-family: PermanentMarker;
+  src: url("../fonts/PermanentMarker-Regular.ttf");
+}
+
+h1 {
+  font-family: PermanentMarker, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 20px;
+}
+
+.climb-container {
+  background-color: #587e8c;
+}
+
+.detail-slide {
+  width: 100%;
+  height: auto;
+  /* background-color: #587e8c; */
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.title h1 {
+  font-size: 5rem;
+}
+
+.landing {
+  background-image: url(../images/walking.jpg);
+  background-blend-mode: multiply;
+  background-color: #303030;
+  background-position: center;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+}
+
+.climbing1,
+.climbing2,
+.climbing3,
+.climbing4,
+.climbing5,
+.climbing6,
+.climbing7,
+.climbing8,
+.climbing9,
+.climbing10,
+.climbing11 {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  color: white;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.climbing-img {
+  height: 70vh;
+  flex-basis: 30rem;
+}
+.climbing-text {
+  flex: 1;
+  position: relative;
+  flex-basis: 25rem;
+}
+.climbing-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.climbing-img video {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.climbing-text h1 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+  color: rgba(242, 183, 5, 1);
+}
+
+.climbing-text p {
+  font-size: 2rem;
+  padding: 2rem 2rem 0rem 0rem;
+  margin-bottom: 10rem;
+}
+
+.nr {
+  font-size: 15rem;
+  position: absolute;
+  left: 42%;
+  bottom: 10%;
+  color: rgba(242, 183, 5, 1);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1260px) {
+  main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .climbing1,
+  .climbing2,
+  .climbing3,
+  .climbing4,
+  .climbing5,
+  .climbing6,
+  .climbing7,
+  .climbing8,
+  .climbing9,
+  .climbing10,
+  .climbing11 {
+    min-height: 60vh;
+    margin-top: 1rem;
+  }
+  .landing h1 {
+    text-align: center;
+  }
+
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+  .climbing-text p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+  .climbing-text h1 {
+    margin: 1rem 0rem;
+    font-size: 2rem;
+  }
+  .nr {
+    font-size: 8rem;
+    left: 60%;
+    bottom: 20%;
+  }
+
+  /* .climbing-text {
+    flex: 1;
+    position: relative;
+    flex-basis: 25rem;
+  } */
+  .climbing-img img {
+    height: 50vh;
+
+    object-fit: contain;
+  }
+}
