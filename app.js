@@ -22,15 +22,15 @@ window.addEventListener("scroll", function () {
 // }
 
 // Parallax
-function parallax(element, distance, speed) {
-  const item = document.querySelector(element);
+// function parallax(element, distance, speed) {
+//   const item = document.querySelector(element);
 
-  item.style.transform = `translateY(${distance * speed}px)`;
-}
+//   item.style.transform = `translateY(${distance * speed}px)`;
+// }
 
-window.addEventListener("scroll", function () {
-  parallax("section.landing", window.scrollY, 1);
-});
+// window.addEventListener("scroll", function () {
+//   parallax("section.landing", window.scrollY, 1);
+// });
 
 // Climbing Page, image transitions
 let controller;
