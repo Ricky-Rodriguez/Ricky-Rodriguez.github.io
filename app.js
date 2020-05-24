@@ -15,22 +15,22 @@ window.addEventListener("scroll", function () {
 });
 
 //Main Landing text
-// const mainLanding = document.querySelectorAll("#main-land-text path");
+const mainLanding = document.querySelectorAll("#main-land-text path");
 
-// for (let i = 0; i < mainLanding.length; i++) {
-//   console.log(`Letter ${i} is ${mainLanding[i].getTotalLength()}`);
-// }
+for (let i = 0; i < mainLanding.length; i++) {
+  console.log(`Letter ${i} is ${mainLanding[i].getTotalLength()}`);
+}
 
-// Parallax
-// function parallax(element, distance, speed) {
-//   const item = document.querySelector(element);
+Parallax;
+function parallax(element, distance, speed) {
+  const item = document.querySelector(element);
 
-//   item.style.transform = `translateY(${distance * speed}px)`;
-// }
+  item.style.transform = `translateY(${distance * speed}px)`;
+}
 
-// window.addEventListener("scroll", function () {
-//   parallax("section.landing", window.scrollY, 1);
-// });
+window.addEventListener("scroll", function () {
+  parallax("section.landing", window.scrollY, 1);
+});
 
 // Climbing Page, image transitions
 let controller;
