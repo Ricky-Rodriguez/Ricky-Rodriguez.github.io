@@ -21,7 +21,7 @@ for (let i = 0; i < mainLanding.length; i++) {
   console.log(`Letter ${i} is ${mainLanding[i].getTotalLength()}`);
 }
 
-Parallax;
+// Parallax
 function parallax(element, distance, speed) {
   const item = document.querySelector(element);
 
