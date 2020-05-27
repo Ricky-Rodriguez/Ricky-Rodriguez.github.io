@@ -131,13 +131,13 @@ video {
     text-align: center;
   }
   .climbing-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 3rem;
     padding: 0;
   }
   .climbing-text h1 {
-    margin: 1rem 0rem;
     font-size: 2rem;
+    letter-spacing: 10px;
   }
   .nr {
     font-size: 8rem;

@@ -52,6 +52,11 @@ img {
 @media screen and (max-width: 1260px) {
   h1 {
     font-size: 1.8rem;
+    letter-spacing: 15px;
+  }
+
+  .art-work {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 480px));
   }
 }
 
