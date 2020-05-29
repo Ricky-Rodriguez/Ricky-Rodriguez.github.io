@@ -322,11 +322,11 @@ footer {
 
 @media screen and (max-width: 768px) {
   .nav a {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .nav .logo {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
 
   .nav-link {
@@ -358,6 +358,6 @@ footer {
   }
 
   .text-box {
-    width: 400px;
+    width: 350px;
   }
 }
