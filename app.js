@@ -32,6 +32,35 @@ window.addEventListener("scroll", function () {
   parallax("section.landing", window.scrollY, 1);
 });
 
+// Painting Page, the lightbox
+
+const modal = document.querySelector(".modal");
+const previews = document.querySelectorAll(".gallery img");
+const original = document.querySelector(".full-img");
+const caption = document.querySelector(".caption");
+
+previews.forEach((preview) => {
+  preview.addEventListener("click", () => {
+    modal.classList.add("open");
+    original.classList.add("open");
+
+    // Dynamic change text and images
+
+    const originalSrc = preview.getAttribute("data-original");
+    original.src = `../images/${originalSrc}`;
+
+    const altText = preview.alt;
+    caption.textContent = altText;
+  });
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target.classList.contains("modal")) {
+    modal.classList.remove("open");
+    original.classList.remove("open");
+  }
+});
+
 // Climbing Page, image transitions
 let controller;
 let detailScene;
@@ -66,5 +95,3 @@ function detailAnimation() {
 }
 
 detailAnimation();
-
-// Painting Page, the lightbox
